@@ -1,11 +1,14 @@
-const express = require("express");
-const app = express();
-const cors = require("cors");
-const port = 8000;
+let express = require("express");
+let cors = require("cors");
+let app = express();
+let router = require("./routes/routes");
+let port = 8000;
 
 app.use(cors());
 app.use(express.static(__dirname + "/public"));
 
-app.listen(8000, () => {
-  console.log("Server started!");
-});
+app.use(cors());
+app.use(express.json());
+
+app.use("/", router);
+app.listen(port, () => console.log(`Server is running on PORT: ${port}!`));
