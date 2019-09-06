@@ -25,7 +25,7 @@ Golden Rules:
 
 ////////////////////////
 THE FOLLOWING STEPS ARE COMPLETED BY THE GITHUB OWNER! 
-//////////////////////
+/////////////////////// 
 Initial Local Set up:
 1. Folder is created in 1 machine. 
 2. git init
